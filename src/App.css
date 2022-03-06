@@ -12,6 +12,22 @@
   --text-color-2: #bbbcbc;
 }
 
+.custom-scroll::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.14);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
 .app {
   background: #2a6c84;
   min-height: 100vh;
@@ -23,7 +39,7 @@
 .app_calculator {
   height: 500px;
   width: 280px;
-  border: radius 30px;
+  border-radius: 30px;
   box-shadow: 1px -1px 20px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
@@ -38,10 +54,10 @@
   left: 0;
   width: 100%;
   background-color: transparent;
-  min-width: 50px;
+  min-height: 40px;
   padding: 10px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -61,7 +77,7 @@
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: #ffff;
+  background-color: #fff;
   transition: 300ms;
 }
 
